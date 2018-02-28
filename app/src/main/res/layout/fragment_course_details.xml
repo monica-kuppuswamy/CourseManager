@@ -1,0 +1,136 @@
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.example.monic.coursemanager.CourseDetails">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <TextView
+            android:id="@+id/textView9"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentStart="true"
+            android:layout_alignParentTop="true"
+            android:layout_marginStart="38dp"
+            android:layout_marginTop="30dp"
+            android:text="Course Title :" />
+
+        <TextView
+            android:id="@+id/cdTitle"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignBaseline="@+id/textView9"
+            android:layout_alignBottom="@+id/textView9"
+            android:layout_marginStart="30dp"
+            android:layout_toEndOf="@+id/textView9" />
+
+        <ImageView
+            android:id="@+id/imageView2"
+            android:layout_width="200dp"
+            android:layout_height="200dp"
+            android:layout_below="@+id/textView9"
+            android:layout_centerHorizontal="true"
+            app:srcCompat="@drawable/default_image" />
+
+        <TextView
+            android:id="@+id/cdInstructor"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignStart="@+id/textView9"
+            android:layout_below="@+id/imageView2"
+            android:layout_marginTop="17dp"
+            android:text="Instructor Name :" />
+
+        <TextView
+            android:id="@+id/textView14"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignStart="@+id/cdInstructor"
+            android:layout_below="@+id/cdInstructor"
+            android:layout_marginTop="17dp"
+            android:text="Course Schedule:" />
+
+        <TextView
+            android:id="@+id/textView15"
+            android:layout_width="80dp"
+            android:layout_height="wrap_content"
+            android:layout_alignEnd="@+id/cdInstructor"
+            android:layout_below="@+id/textView14"
+            android:layout_marginTop="21dp"
+            android:text="Day" />
+
+        <TextView
+            android:id="@+id/textView16"
+            android:layout_width="80dp"
+            android:layout_height="wrap_content"
+            android:layout_alignStart="@+id/textView15"
+            android:layout_below="@+id/textView15"
+            android:layout_marginTop="16dp"
+            android:text="Time" />
+
+        <TextView
+            android:id="@+id/cdDay"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignTop="@+id/textView15"
+            android:layout_centerHorizontal="true"
+            android:text="TextView" />
+
+        <TextView
+            android:id="@+id/cdTime"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignStart="@+id/cdDay"
+            android:layout_alignTop="@+id/textView16"
+            android:text="TextView" />
+
+        <TextView
+            android:id="@+id/textView19"
+            android:layout_width="80dp"
+            android:layout_height="wrap_content"
+            android:layout_alignEnd="@+id/textView14"
+            android:layout_below="@+id/textView16"
+            android:layout_marginTop="16dp"
+            android:text="Credit Hours" />
+
+        <TextView
+            android:id="@+id/cdCredit"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignBottom="@+id/textView19"
+            android:layout_alignStart="@+id/cdTime"
+            android:text="TextView" />
+
+        <TextView
+            android:id="@+id/textView21"
+            android:layout_width="80dp"
+            android:layout_height="wrap_content"
+            android:layout_alignEnd="@+id/textView15"
+            android:layout_alignStart="@+id/textView19"
+            android:layout_below="@+id/textView19"
+            android:layout_marginTop="21dp"
+            android:text="Semester" />
+
+        <TextView
+            android:id="@+id/cdSemster"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignBottom="@+id/textView21"
+            android:layout_alignStart="@+id/cdCredit"
+            android:layout_alignTop="@+id/textView21"
+            android:text="TextView" />
+
+        <TextView
+            android:id="@+id/cInstructor"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignStart="@+id/cdDay"
+            android:layout_alignTop="@+id/cdInstructor"
+            android:text="TextView" />
+    </RelativeLayout>
+
+</FrameLayout>

@@ -1,0 +1,88 @@
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.example.monic.coursemanager.SignupFragment">
+
+    <!-- TODO: Update blank fragment layout -->
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <ImageView
+            android:id="@+id/imageView"
+            android:layout_width="100dp"
+            android:layout_height="100dp"
+            android:layout_alignParentTop="true"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="40dp"
+            app:srcCompat="@drawable/add_photo" />
+
+        <EditText
+            android:id="@+id/lastName"
+            android:layout_width="250dp"
+            android:layout_height="wrap_content"
+            android:layout_alignStart="@+id/firstName"
+            android:layout_below="@+id/firstName"
+            android:layout_marginTop="18dp"
+            android:ems="10"
+            android:hint="Last Name"
+            android:inputType="textPersonName" />
+
+        <EditText
+            android:id="@+id/firstName"
+            android:layout_width="250dp"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/imageView"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="31dp"
+            android:ems="10"
+            android:hint="First Name"
+            android:inputType="textPersonName" />
+
+        <EditText
+            android:id="@+id/lpassword"
+            android:layout_width="250dp"
+            android:layout_height="wrap_content"
+            android:layout_alignStart="@+id/uName"
+            android:layout_below="@+id/uName"
+            android:layout_marginTop="20dp"
+            android:ems="10"
+            android:hint="Personal Website"
+            android:inputType="textPersonName" />
+
+        <EditText
+            android:id="@+id/uName"
+            android:layout_width="250dp"
+            android:layout_height="wrap_content"
+            android:layout_alignStart="@+id/lastName"
+            android:layout_below="@+id/lastName"
+            android:layout_marginTop="17dp"
+            android:ems="10"
+            android:hint="Email"
+            android:inputType="textPersonName" />
+
+        <Button
+            android:id="@+id/resetButton"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignStart="@+id/lpassword"
+            android:layout_below="@+id/lpassword"
+            android:layout_marginStart="18dp"
+            android:layout_marginTop="32dp"
+            android:text="reset" />
+
+        <Button
+            android:id="@+id/addButton"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignBaseline="@+id/resetButton"
+            android:layout_alignBottom="@+id/resetButton"
+            android:layout_alignEnd="@+id/lpassword"
+            android:layout_marginEnd="21dp"
+            android:text="add" />
+
+    </RelativeLayout>
+</FrameLayout>

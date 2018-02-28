@@ -1,0 +1,221 @@
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:card_view="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.example.monic.coursemanager.CreateCourse">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <TextView
+            android:id="@+id/textView"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentStart="true"
+            android:layout_alignParentTop="true"
+            android:layout_marginStart="39dp"
+            android:layout_marginTop="35dp"
+            android:text="@string/courseTitle" />
+
+        <EditText
+            android:id="@+id/cTitle"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignBaseline="@+id/textView"
+            android:layout_alignBottom="@+id/textView"
+            android:layout_marginStart="25dp"
+            android:layout_toEndOf="@+id/textView"
+            android:ems="10"
+            android:inputType="textPersonName" />
+
+        <TextView
+            android:id="@+id/textView4"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignStart="@+id/textView"
+            android:layout_below="@+id/cTitle"
+            android:layout_marginTop="14dp"
+            android:text="@string/chooseInstructorLabel" />
+
+        <ScrollView
+            android:id="@+id/scrollview"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignStart="@+id/textView4"
+            android:layout_below="@+id/textView4"
+            android:layout_marginTop="15dp">
+
+            <android.support.v7.widget.RecyclerView
+                android:id="@+id/card_view"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical" />
+        </ScrollView>
+
+        <TextView
+            android:id="@+id/textView6"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignStart="@+id/scrollview"
+            android:layout_below="@+id/scrollview"
+            android:layout_marginTop="18dp"
+            android:text="Schedule" />
+
+        <TextView
+            android:id="@+id/textView7"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignStart="@+id/resetButton"
+            android:layout_below="@+id/textView6"
+            android:layout_marginTop="13dp"
+            android:text="Day" />
+
+        <TextView
+            android:id="@+id/textView8"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignStart="@+id/textView7"
+            android:layout_below="@+id/textView7"
+            android:layout_marginTop="13dp"
+            android:text="Time" />
+
+        <Button
+            android:id="@+id/createButton"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignBottom="@+id/resetButton"
+            android:layout_alignEnd="@+id/cTitle"
+            android:text="Create" />
+
+        <Button
+            android:id="@+id/resetButton"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="12dp"
+            android:text="Reset"
+            android:layout_alignParentBottom="true"
+            android:layout_alignEnd="@+id/hourText" />
+
+        <TextView
+            android:id="@+id/textView11"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignStart="@+id/textView12"
+            android:layout_below="@+id/textView8"
+            android:layout_marginTop="12dp"
+            android:text="Credit Hours" />
+
+        <TextView
+            android:id="@+id/textView12"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignStart="@+id/textView6"
+            android:layout_below="@+id/textView11"
+            android:layout_marginTop="11dp"
+            android:text="Semester" />
+
+        <Spinner
+            android:id="@+id/semSpinner"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignBottom="@+id/textView12"
+            android:layout_alignStart="@+id/daysSpinner" />
+
+        <Spinner
+            android:id="@+id/timeSpinner"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_above="@+id/textView11"
+            android:layout_alignEnd="@+id/daysSpinner"
+            android:layout_below="@+id/daysSpinner" />
+
+        <Spinner
+            android:id="@+id/daysSpinner"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_above="@+id/textView8"
+            android:layout_alignEnd="@+id/createButton" />
+
+        <RadioGroup
+            android:id="@+id/creditGroup"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignBottom="@+id/textView11"
+            android:layout_alignParentBottom="false"
+            android:layout_alignParentEnd="false"
+            android:layout_alignParentLeft="false"
+            android:layout_alignParentRight="false"
+            android:layout_alignParentStart="false"
+            android:layout_alignParentTop="false"
+            android:layout_toEndOf="@+id/textView4"
+            android:orientation="horizontal">
+
+            <RadioButton
+                android:id="@+id/oneCredit"
+                android:layout_width="50dp"
+                android:layout_height="wrap_content"
+                android:layout_alignBaseline="@+id/textView11"
+                android:layout_alignBottom="@+id/textView11"
+                android:layout_toEndOf="@+id/creditGroup"
+                android:layout_weight="1"
+                android:text="1" />
+
+            <RadioButton
+                android:id="@+id/twoCredit"
+                android:layout_width="50dp"
+                android:layout_height="wrap_content"
+                android:layout_alignBaseline="@+id/oneCredit"
+                android:layout_alignBottom="@+id/oneCredit"
+                android:layout_alignStart="@+id/timeSpinner"
+                android:layout_weight="1"
+                android:text="2" />
+
+            <RadioButton
+                android:id="@+id/threeCredit"
+                android:layout_width="56dp"
+                android:layout_height="wrap_content"
+                android:layout_alignBaseline="@+id/twoCredit"
+                android:layout_alignBottom="@+id/twoCredit"
+                android:layout_alignEnd="@+id/createButton"
+                android:text="3" />
+        </RadioGroup>
+
+        <EditText
+            android:id="@+id/hourText"
+            android:layout_width="50dp"
+            android:layout_height="wrap_content"
+            android:layout_above="@+id/creditGroup"
+            android:layout_toEndOf="@+id/textView11"
+            android:ems="10"
+            android:inputType="textPersonName" />
+
+        <TextView
+            android:id="@+id/textView5"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/daysSpinner"
+            android:layout_toEndOf="@+id/hourText"
+            android:text=":" />
+
+        <EditText
+            android:id="@+id/minText"
+            android:layout_width="50dp"
+            android:layout_height="wrap_content"
+            android:layout_above="@+id/creditGroup"
+            android:layout_toEndOf="@+id/textView5"
+            android:ems="10"
+            android:inputType="textPersonName" />
+
+        <TextView
+            android:id="@+id/noInstructors"
+            android:layout_width="wrap_content"
+            android:layout_height="60dp"
+            android:text="@string/noInstructors"
+            android:layout_below="@+id/textView4"
+            android:layout_alignParentEnd="true"
+            android:layout_alignStart="@+id/textView4" />
+
+    </RelativeLayout>
+</FrameLayout>

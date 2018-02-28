@@ -1,0 +1,34 @@
+<resources>
+    <string name="app_name">CourseManager</string>
+
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+    <string name="notRegistered">Not Registered?</string>
+    <string name="signupLink">Sign Up</string>
+    <string name="courseTitle">Title</string>
+    <string name="chooseInstructorLabel">Choose Instructor</string>
+    <string name="home">Home</string>
+    <string name="instructors">Instructors</string>
+    <string name="addInstructors">Add Instructors</string>
+    <string name="logout">Logout</string>
+    <string name="quit">Quit</string>
+    <string name="noInstructors">You haven’t added any instructor yet, please add at least one instructor to continue.</string>
+    <string-array name="days_array">
+        <item>Select</item>
+        <item>Monday</item>
+        <item>Tuesday</item>
+        <item>Wednesday</item>
+        <item>Thursday</item>
+        <item>Friday</item>
+    </string-array>
+    <string-array name="time_array">
+        <item>AM</item>
+        <item>PM</item>
+    </string-array>
+    <string-array name="semester_array">
+        <item>Select Semester</item>
+        <item>Spring</item>
+        <item>Fall</item>
+        <item>Summer</item>
+    </string-array>
+</resources>
